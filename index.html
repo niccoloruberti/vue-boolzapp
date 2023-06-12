@@ -11,7 +11,7 @@
     </head>
     <body>
         <div id="app">
-            <main class="container d-flex mt-5">
+            <main class="container d-flex pt-5">
                 <!-- contenitore sezione sinistra, elenco chat -->
                 <div class="left">
                     <div class="container h-100 d-flex flex-column">
@@ -34,16 +34,16 @@
                             </div>
                         </div>
                         <!-- notifiche desktop -->
-                        <div class="row bg-info-subtle py-2">
+                        <div class="row bg-info py-2">
                             <div class="col-3">
                                 <div class="content py-2 h-100 d-flex justify-content-center align-items-center">
-                                    <i class="fas fa-bell-slash big-icon white-circle p-2"></i>
+                                    <i class="fas fa-bell-slash fs-3 p-2 text-info white-circle"></i>
                                 </div>
                             </div>
                             <div class="col-9">
                                 <div class="content h-100 d-flex flex-column justify-content-center align-items-start">
                                     <span>Ricevi notifiche di nuovi messaggi</span>
-                                    <a href="#">Attiva notifiche desktop</a>
+                                    <a href="#" class="text-black-50">Attiva notifiche desktop</a>
                                 </div>
                             </div>
                         </div>
@@ -152,7 +152,61 @@
                     </div>
                 </div>
                 <!-- contenitore sezione destra, vista chat -->
-                <div class="right"></div>
+                <div class="right position-relative">
+                    <div class="container h-100">
+                        <!-- top chat -->
+                        <div class="row bg-light border-start position-absolute z-1 top-0 w-100">
+                            <!-- user -->
+                            <div class="col-5">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="content py-2 d-flex">
+                                            <img class="img-user mx-3" src="./img/avatar_1.jpg" alt="avatar">
+                                            <div class="d-flex flex-column justify-content-center align-items-start">
+                                                <span class="nome">Michele</span>
+                                                <span class="messaggio text-secondary">Ultimo messaggio inviato</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- tools -->
+                            <div class="col-3 offset-4">
+                                <div class="h-100 content d-flex justify-content-end align-items-center">
+                                    <i class="fas fa-magnifying-glass mx-2"></i>
+                                    <i class="fas fa-paperclip mx-2"></i>
+                                    <i class="fas fa-ellipsis-vertical mx-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- chat content -->
+                        <div class="row h-100 background-chat overflow-y-auto">
+                            <div class="col-12">
+                                <div class="h-100 chat-content">
+                                    <div class="message-text-box rounded send">
+                                        <span class="message-text">Hai portato a spasso il cane?</span>
+                                    </div>
+                                    <div class="message-text-box rounded send">
+                                        <span class="message-text">Ricordati di stendere i panni</span>
+                                    </div>
+                                    <div class="message-text-box rounded recived">
+                                        <span class="message-text">Tutto fatto!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bottom chat -->
+                        <div class="row position-absolute bottom-0 w-100 bg-light">
+                            <div class="col-12">
+                                <div class="content d-flex justify-content-around align-items-center py-2">
+                                    <i class="fa-regular fa-face-smile fs-4"></i>
+                                    <input class="w-75 px-2 py-1" type="text" name="message" id="message" placeholder="scrivi un messaggio">
+                                    <i class="fas fa-microphone fs-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

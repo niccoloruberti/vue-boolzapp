@@ -1,0 +1,1 @@
+- replico la grafica del mockup fornito;
