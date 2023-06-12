@@ -5,15 +5,49 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Boolzapp</title>
-        <link rel="stylesheet" href="./css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <div id="app">
             <main class="container d-flex mt-5">
                 <!-- contenitore sezione sinistra, elenco chat -->
                 <div class="left">
-                    <!-- riga profilo personale -->
+                    <div class="container">
+                        <!-- riga profilo personale -->
+                        <div class="row bg-light">
+                            <!-- immagine profilo -->
+                            <div class="col-4">
+                                <div class="content d-flex justify-content-between align-items-center p-2">
+                                    <img class="img-user" src="./img/avatar_io.jpg" alt="foto_profilo">
+                                    <span class="mx-2">Sofia</span>
+                                </div>
+                            </div>
+                            <!-- tools -->
+                            <div class="col-4 offset-4">
+                                <div class="h-100 content d-flex justify-content-around align-items-center">
+                                    <i class="fas fa-circle-notch"></i>
+                                    <i class="fas fa-message"></i>
+                                    <i class="fas fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- notifiche desktop -->
+                        <div class="row bg-info-subtle py-2">
+                            <div class="col-3">
+                                <div class="content py-2 h-100 d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-bell-slash big-icon white-circle p-2"></i>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="content h-100 d-flex flex-column justify-content-center align-items-start">
+                                    <span>Ricevi notifiche di nuovi messaggi</span>
+                                    <a href="#">Attiva notifiche desktop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- contenitore sezione destra, vista chat -->
                 <div class="right"></div>
