@@ -3,3 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0,150,136,1) 20%, rgba(218,219,211,1) 20%);
+}
+
+.left {
+    width: 30%;
+    background-color: blue;
+    height: 500px;
+}
+
+.right {
+    width: 70%;
+    background-color: red;
+    height: 500px;
+}
