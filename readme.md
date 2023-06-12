@@ -1,1 +1,2 @@
 - replico la grafica del mockup fornito;
+- creo una direttiva v-for per ciclare i contatti dell'array e scrivere la lista delle chat con il nome, l'immagine dell'avatar e l'ultimo messaggio;
