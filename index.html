@@ -106,14 +106,8 @@
                         <div class="row h-100 background-chat overflow-y-auto">
                             <div class="col-12">
                                 <div class="h-100 chat-content">
-                                    <div class="message-text-box rounded send">
-                                        <span class="message-text">Hai portato a spasso il cane?</span>
-                                    </div>
-                                    <div class="message-text-box rounded send">
-                                        <span class="message-text">Ricordati di stendere i panni</span>
-                                    </div>
-                                    <div class="message-text-box rounded recived">
-                                        <span class="message-text">Tutto fatto!</span>
+                                    <div v-for="(elem, index) in (contacts[activeChat].messages)" class="message-text-box rounded" :class="(elem.status) == 'received' ? 'recived' : 'send'">
+                                        <span class="message-text">{{elem.message}}</span>
                                     </div>
                                 </div>
                             </div>
