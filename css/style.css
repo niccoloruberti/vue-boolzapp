@@ -33,6 +33,11 @@ body {
     background-color: white;
 }
 
+.elenco-chat {
+    height: 100%;
+    background-color: white;
+}
+
 .elenco-chat .anteprima-chat:hover {
     filter: opacity(0.5);
 }
@@ -77,5 +82,5 @@ body {
     color: grey;
     position: absolute;
     right: 3px;
-    bottom: 3px;
+    bottom: 1px;
 }

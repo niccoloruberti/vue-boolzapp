@@ -52,7 +52,7 @@
                             <div class="col-12">
                                 <div class="content search-bar py-2">
                                     <i class="fas fa-search mx-3 p-2"></i>
-                                    <input class="w-75" type="text" placeholder="Cerca o inizia una nuova chat">
+                                    <input class="w-75" type="text" v-model="searchChat" placeholder="Cerca o inizia una nuova chat">
                                 </div>
                             </div>
                         </div>
@@ -61,7 +61,7 @@
                             <div class="col-12">
                                 <div class="row bg-white anteprima-chat" v-for="(elem, index) in contacts" @click="setActiveChat(index)">
                                     <div class="col-12">
-                                        <div class="content py-2 d-flex  position-relative">
+                                        <div v-if="searchChat == '' || elem.name.toLowerCase().includes(searchChat.toLowerCase())" class="content py-2 d-flex  position-relative border-bottom">
                                             <img class="img-user mx-3" :src="elem.avatar" alt="avatar">
                                             <div class="d-flex flex-column justify-content-center align-items-start">
                                                 <span class="nome fw-bold">{{elem.name}}</span>

@@ -5,6 +5,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+        searchChat: '',
         newMessage: '',
         activeChat: 0,
         contacts: [
@@ -197,7 +198,6 @@ methods: {
             message: 'Ok',
             status: 'received'
         };
-        console.log(obj)
         this.contacts[activeChat].messages.push(obj);
     }
 }

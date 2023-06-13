@@ -13,3 +13,7 @@
     - quando viene premuto il tasto invio il contenuto della variabile newMessage viene aggiunto ad un oggetto e pushato all'interno dell'array con i messaggi di quella chat e quindi poi visibile a schermo;
     - creo una nuova funzione che crea un oggeto con una risposta automatica 'ok';
     - richiamo la funzione con la risposta automatica all'interno della funzione per aggiungere un nuovo messaggio con un set timeout impostato a 1 secondo;
+- Milestone 4
+    - creo una variabile searchChat che di default è vuota;
+    - creo una direttiva v-model nel campo input della lista delle chat che inserisce il valore dell'input nella variabile creata sopra;
+    - inserisco una condizione all'interno del ciclo che crea la lista delle antemprima delle chat, che fa vedere quest'ultime solamente nel caso in cui il campo di ricerca sia vuoto oppure contenga i caratteri scritti;
