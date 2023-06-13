@@ -186,6 +186,19 @@ methods: {
         };
         this.contacts[activeChat].messages.push(obj);
         this.newMessage = '';
+        setTimeout(() => {
+            this.automaticResponse(activeChat);
+        }, 1000);
+
+    },
+    automaticResponse(activeChat) {
+        let obj = {
+            date: `${new Date().getDate()}/${new Date().getUTCMonth() + 1}/${new Date().getFullYear()} ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`,
+            message: 'Ok',
+            status: 'received'
+        };
+        console.log(obj)
+        this.contacts[activeChat].messages.push(obj);
     }
 }
 }).mount('#app')

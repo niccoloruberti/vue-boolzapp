@@ -11,3 +11,5 @@
     - tramite la direttiva v-model assegno il valore all'interno del campo di input per inviare un messaggio alla variabile newMessage;
     - creo un nuovo metodo addNewMessage;
     - quando viene premuto il tasto invio il contenuto della variabile newMessage viene aggiunto ad un oggetto e pushato all'interno dell'array con i messaggi di quella chat e quindi poi visibile a schermo;
+    - creo una nuova funzione che crea un oggeto con una risposta automatica 'ok';
+    - richiamo la funzione con la risposta automatica all'interno della funzione per aggiungere un nuovo messaggio con un set timeout impostato a 1 secondo;
