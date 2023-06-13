@@ -59,7 +59,7 @@
                         <!-- elenco chat -->
                         <div class="row overflow-y-auto elenco-chat">
                             <div class="col-12">
-                                <div class="row bg-white anteprima-chat" v-for="(elem, index) in contacts">
+                                <div class="row bg-white anteprima-chat" v-for="(elem, index) in contacts" @click="setActiveChat(index)">
                                     <div class="col-12">
                                         <div class="content py-2 d-flex">
                                             <img class="img-user mx-3" :src="elem.avatar" alt="avatar">
