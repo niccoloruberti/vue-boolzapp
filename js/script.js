@@ -1,6 +1,6 @@
 'use strict';
 
-const { createApp } = Vue
+const { createApp } = Vue;
 
 createApp({
   data() {
@@ -180,7 +180,7 @@ methods: {
     addNewMessage(activeChat) {
         console.log(activeChat)
         let obj = {
-            date: '',
+            date: `${new Date().getDate()}/${new Date().getUTCMonth() + 1}/${new Date().getFullYear()} ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`,
             message: this.newMessage,
             status: 'sent'
         };
