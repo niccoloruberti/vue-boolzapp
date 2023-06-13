@@ -5,6 +5,7 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
+        newMessage: '',
         activeChat: 0,
         contacts: [
             {
@@ -175,6 +176,16 @@ createApp({
 methods: {
     setActiveChat(index) {
         this.activeChat = index;
+    },
+    addNewMessage(activeChat) {
+        console.log(activeChat)
+        let obj = {
+            date: '',
+            message: this.newMessage,
+            status: 'sent'
+        };
+        this.contacts[activeChat].messages.push(obj);
+        this.newMessage = '';
     }
 }
 }).mount('#app')
