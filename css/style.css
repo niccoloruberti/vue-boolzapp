@@ -71,3 +71,11 @@ body {
     background-color: #fff;
     position: relative;
 }
+
+.date {
+    font-size: 8px;
+    color: grey;
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+}

@@ -61,11 +61,12 @@
                             <div class="col-12">
                                 <div class="row bg-white anteprima-chat" v-for="(elem, index) in contacts" @click="setActiveChat(index)">
                                     <div class="col-12">
-                                        <div class="content py-2 d-flex">
+                                        <div class="content py-2 d-flex  position-relative">
                                             <img class="img-user mx-3" :src="elem.avatar" alt="avatar">
                                             <div class="d-flex flex-column justify-content-center align-items-start">
                                                 <span class="nome fw-bold">{{elem.name}}</span>
                                                 <span class="messaggio text-secondary">{{elem.messages[(elem.messages).length - 1].message}}</span>
+                                                <span class="date">{{elem.messages[(elem.messages).length - 1].date}}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -86,8 +87,8 @@
                                         <div class="content py-2 d-flex">
                                             <img class="img-user mx-3" src="./img/avatar_1.jpg" alt="avatar">
                                             <div class="d-flex flex-column justify-content-center align-items-start">
-                                                <span class="nome">Michele</span>
-                                                <span class="messaggio text-secondary">Ultimo messaggio inviato</span>
+                                                <span class="nome">{{contacts[activeChat].name}}</span>
+                                                <span class="messaggio text-secondary">{{contacts[activeChat].messages[(contacts[activeChat].messages).length - 1].message}}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -106,8 +107,9 @@
                         <div class="row h-100 background-chat overflow-y-auto">
                             <div class="col-12">
                                 <div class="h-100 chat-content">
-                                    <div v-for="(elem, index) in (contacts[activeChat].messages)" class="message-text-box rounded" :class="(elem.status) == 'received' ? 'recived' : 'send'">
-                                        <span class="message-text">{{elem.message}}</span>
+                                    <div v-for="(elem, index) in (contacts[activeChat].messages)" class="message-text-box rounded position-relative" :class="(elem.status) == 'received' ? 'recived' : 'send'">
+                                            <span class="message-text">{{elem.message}}</span>
+                                            <span class="date">{{elem.date}}</span>
                                     </div>
                                 </div>
                             </div>
