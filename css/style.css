@@ -66,6 +66,16 @@ body {
     z-index: 0;
 }
 
+.dropdown-message-option {
+    position: absolute;
+    top: -3px;
+    right: 5px;
+}
+
+.dropdown-message-option i {
+    font-size: 12px;
+}
+
 .send {
     background-color: rgb(213, 249, 186);
     position: relative;
