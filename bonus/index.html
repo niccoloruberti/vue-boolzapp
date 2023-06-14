@@ -127,7 +127,8 @@
                                 <div class="content d-flex justify-content-around align-items-center py-2">
                                     <i class="fa-regular fa-face-smile fs-4"></i>
                                     <input class="w-75 px-2 py-1" type="text" name="message" id="message" v-model="newMessage" @keyup.enter="addNewMessage(activeChat)" placeholder="scrivi un messaggio">
-                                    <i class="fas fa-microphone fs-4"></i>
+                                    <i v-if="newMessage !== ''" @click="addNewMessage(activeChat)" class="fas fa-paper-plane fs-4"></i>
+                                    <i v-else class="fas fa-microphone fs-4"></i>
                                 </div>
                             </div>
                         </div>
