@@ -111,8 +111,8 @@
                                         <div class="dropdown dropdown-message-option">
                                             <button class="border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-chevron-down text-secondary"></i></button>
                                             <ul class="dropdown-menu z-3">
-                                              <li><a class="dropdown-item" href="#">Action</a></li>
-                                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                                              <li><a class="dropdown-item text-secondary" href="#">Message info</a></li>
+                                              <li><a class="dropdown-item text-secondary" @click="deleteMessage(index)">Delete message</a></li>
                                             </ul>
                                         </div>
                                             <span class="message-text">{{elem.message}}</span>

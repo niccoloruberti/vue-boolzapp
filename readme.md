@@ -17,3 +17,7 @@
     - creo una variabile searchChat che di default è vuota;
     - creo una direttiva v-model nel campo input della lista delle chat che inserisce il valore dell'input nella variabile creata sopra;
     - inserisco una condizione all'interno del ciclo che crea la lista delle antemprima delle chat, che fa vedere quest'ultime solamente nel caso in cui il campo di ricerca sia vuoto oppure contenga i caratteri scritti;
+- Milestone 5
+    - inserisco un dropdown menu che mostra le azioni che si possono eseguire sul messaggio;
+    - Creo la funzione deleteMessage che con la funzione slice() rimuove il messaggio dall'array;
+    - Richiamo la funzione quando viene premuto delete message all'interno del dropdown tra le opzioni del messaggio;

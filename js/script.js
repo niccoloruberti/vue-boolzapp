@@ -199,6 +199,9 @@ methods: {
             status: 'received'
         };
         this.contacts[activeChat].messages.push(obj);
+    },
+    deleteMessage(index) {
+        this.contacts[this.activeChat].messages.splice(index,1);
     }
 }
 }).mount('#app')

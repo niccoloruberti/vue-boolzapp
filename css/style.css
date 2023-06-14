@@ -63,7 +63,6 @@ body {
     padding: 15px 5px;
     margin: 5px;
     width: 40%;
-    z-index: 0;
 }
 
 .dropdown-message-option {
@@ -78,13 +77,11 @@ body {
 
 .send {
     background-color: rgb(213, 249, 186);
-    position: relative;
     left: 58%;
 }
 
 .recived {
     background-color: #fff;
-    position: relative;
 }
 
 .date {
