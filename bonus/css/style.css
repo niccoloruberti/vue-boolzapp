@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1000px;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0,150,136,1) 20%, rgba(218,219,211,1) 20%);
+}
+
+.left {
+    width: 35%;
+    height: 80vh;
+    max-height: 700px;
+}
+
+.right {
+    width: 65%;
+    height: 80vh;
+    max-height: 700px;
+}
+
+.img-user {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.white-circle {
+    border-radius: 50%;
+    background-color: white;
+}
+
+.elenco-chat {
+    height: 100%;
+    background-color: white;
+}
+
+.elenco-chat .anteprima-chat:hover {
+    filter: opacity(0.5);
+}
+
+.elenco-chat .nome {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.elenco-chat .messaggio {
+    font-size: 12px;
+}
+
+.background-chat {
+    background-image: url('../img/mine.jpg');
+}
+
+.chat-content {
+    padding: 70px 0;
+}
+
+.message-text-box {
+    padding: 15px 5px;
+    margin: 5px;
+    width: 40%;
+}
+
+.dropdown-message-option {
+    position: absolute;
+    top: -3px;
+    right: 5px;
+}
+
+.dropdown-message-option i {
+    font-size: 12px;
+}
+
+.send {
+    background-color: rgb(213, 249, 186);
+    left: 58%;
+}
+
+.recived {
+    background-color: #fff;
+}
+
+.date {
+    font-size: 10px;
+    color: grey;
+    position: absolute;
+    right: 3px;
+    bottom: 1px;
+}
